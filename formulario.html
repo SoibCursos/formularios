@@ -24,19 +24,20 @@
         <input type="submit">
     </form>-->
 
-<form action="#">
+<form action="#" method="get" autocomplete="off">
     <div class="my-imput">
         <label for="nombre_id">Nombre:</label>
-        <input type="text" name="nombres" id="nombre_id" placeholder="Pon aquí tu nombre porfa">
+        <input type="text" name="nombres" id="nombre_id" placeholder="Pon aquí tu nombre porfa" required size="20">
     </div>
     <div class="my-imput">
         <label for="apellido_id">ApellidosJar:</label>
-        <input type="text" name="apellidos" id="apellido_id">
+        <input type="text" name="apellidos" id="apellido_id" autofocus>
     </div>
     <div class="my-imput">
         <!--<input type="submit">-->
     </div>
-    <!--Que difernecia hay entre un -->
+    <!--Que difernecia hay entre un radio button y un checkbox-->
+    <!--Lo que hace que sea un único grupo o bloque es el name (radiobutton)-->
     <p>SELECCIONA TU POSTRE</p>
     <label for="tarte-queso">Tarta de queso</label>
     <input type="radio" name="postre-favorito" id="tarta-queso" value="tarta de queso">
@@ -51,7 +52,51 @@
     <input type="radio" name="postre-favorito" id="ninguno" value="ninguno" checked>
     <br>
     <br>
-    <input type="submit">
+    <!--checkbox--><!--El checked es parta que salga por defecto amrcado en las elecciones que presentamos-->
+    <p><Elige algunos hobbies></p>
+    <input type="checkbox" name="hobbie-1" id="hobbie-1" value="futbol" checked>
+    <label for="hobbie-1">Jugar al fútbol</label>
+    <br>
+    <input type="checkbox" name="hobbie-2" id="hobbie-1" value="maquetismo">
+    <label for="hobbie-1">hacer maquetas</label>
+    <br>
+    <input type="checkbox" name="hobbie-3" id="hobbie-1" value="padel">
+    <label for="hobbie-1">Jugar al padel</label>
+    <br>
+    <p>escribe un emal válido</p>
+    <label for="email">aquí tu mail</label>
+    <input type="email" name="email" id="email" placeholder="tu email@loQueSea.com">
+    <br>
+    <br>
+    <!--Textos largos-->
+    <label for="descripcion">que te cuentas?</label><br>
+    <textarea cols="20" rows="10" name="descripcion" id="descripcion" placeholder="Pon aquí lo que te venga en gana"></textarea>
+    <br>
+    <br>
+    <!--número-->
+    <input type="number" name="" id="" value="0" min="0" max="20" step="2">
+    <br><input type="range" name="range" id="range" value="4" min="2" max="10">
+    <br><br>
+    <!--campos de selección de opciones--> <!--Con multiple selecciono varios items del desplegable-->
+    <label for="cars">Elige un coche</label>
+    <select name="cars" id="cars" multiple>
+        <option value="">-</option>
+        <option value="Fiat">fiat</option>
+        <option value="Seat">Seat</option>
+        <option value="Volvo">Volvo</option>
+    </select>
+
+    <label for="bikes">Elige un coche</label>
+    <select name="bikes" id="bikes" multiple>
+        <option value="">-</option>
+        <option value="Fiat">bultaco</option>
+        <option value="Seat">puig</option>
+        <option value="Volvo">rieju</option>
+    </select>
+
+    <!--El type submit envía el formulatio-->
+    <div class="my-input"><input type="submit" disabled></div>
+    
 
 </form>
 
